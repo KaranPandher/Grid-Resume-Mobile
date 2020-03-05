@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+/* VERY CRUCIAL REQUIRED TO DISPLAY: GRID */
+body{display:grid;}
+.navi{grid-area: navi;}
+.hero{grid-area: hero;}
+.about{grid-area: about;}
+.content-1{grid-area: content-1;}
+.content-2{grid-area: content-2;}
+.content-3{grid-area: content-3;}
+.education-1{grid-area: education-1;}
+.education-2{grid-area: education-2;}
+.experience-1{grid-area: experience-1;}
+.experience-2{grid-area: experience-2;}
+.experience-3{grid-area: experience-3;}
+.experience-4{grid-area: experience-4;}
+.technial{grid-area: technical;}
+.soft{grid-area: soft;}
+.links{grid-area: links;}
+
+body{
+        display: grid;
+        grid-template-columns: 100%; /* 1 columns */ 
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "navi" 
+            "hero"
+            "about"
+            "content-1"
+            "content-2"
+            "content-3"
+            "education-1"
+            "education-2"
+            "experience-1"
+            "experience-2"
+            "experience-3"
+            "experience-4"
+            "links";
+    }
+
+body {
+    font-family: 'Jura'
+}
+
+body > * {
+    border: red 2px solid;
+}
+
+.hero h1{
+    text-align: center;
+}
+
+.hero p{
+    text-align: justify;
+    padding-top: 20px;
+}
+
+#bitmoji{
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom: 20px;
+}
+
+#techbg{
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.about{ /* */ 
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.about p{
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+ 
+.about{
+    background-color: #041e42;
+    color: #ffff;
+}
+
+.content-1,
+.content-2,
+.content-3{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 90%;
+    border: 3px solid #041e42;
+    justify-self: center;
+}
+
+.content-1 h2,
+.content-2 h2,
+.content-3 h2{
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+}
+
+.content-1 h4,
+.content-2 h4,
+.content-3 h4{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
